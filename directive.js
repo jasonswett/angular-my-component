@@ -1,4 +1,4 @@
 angular.module('your-name.my-directive', []).
-  directive('btfMyDirective', function() {
-    // implementation goes here
+  directive('redBox', function() {
+    console.log('red box 2');
   });
