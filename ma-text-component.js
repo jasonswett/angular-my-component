@@ -10,7 +10,7 @@ angular.module('your-name.my-directive', []).
                 template: '\
                     <div ng-class="container.css" ng-attr-ma-bkgd-img="container.bkgdImg">\
                         <div ng-class="content.css" class="ma-content" ng-attr-ma-bkgd-img="content.bkgdImg"></div>\
-                    </div>';
+                    </div>',
 
                 scope: {
                     data: '='
