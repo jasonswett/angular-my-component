@@ -1,0 +1,41 @@
+.ma-true-false-component {
+
+	display: inline-block;
+	width: 100%;
+
+	.container {
+		overflow: hidden;
+
+		.content {
+			width: 100%;
+		}
+	}
+
+	.controls-container {
+
+		.button {
+			@extend .btn;
+			@extend .btn-danger;
+			width: 35%;
+			height: 50px;
+			line-height: 35px;
+			margin: 10px 10px 10px 0;
+		}
+	}
+
+	// TODO how is this used?
+	.theme {
+		&-white {
+			h2, p {
+				color: $grey100;
+			}
+
+			.ordering-button-container {
+				button {
+					background-color: $grey100;
+				}
+			}
+		}
+	}
+}
+

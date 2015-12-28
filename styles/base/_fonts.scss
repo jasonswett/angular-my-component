@@ -1,0 +1,79 @@
+@font-face {
+    font-family: $font-name + '-Regular';
+    src: url($font-location + '/2FC767_5_0.woff');
+}
+
+@font-face {
+    font-family: $font-name + '-Thin';
+    src: url($font-location + '/2FC767_1_0.woff');
+}
+
+@font-face {
+    font-family: $font-name + '-Light';
+    src: url($font-location + '/2FC767_7_0.woff');
+}
+
+@font-face {
+    font-family: $font-name + '-Bold';
+    src: url($font-location + '/2FC767_4_0.woff');
+}
+
+@font-face {
+    font-family: $font-name + '-ThinItalic';
+    src: url($font-location + '/2FC767_0_0.woff');
+}
+
+@font-face {
+    font-family: $font-name + '-RegularItalic';
+    src: url($font-location + '/2FC767_2_0.woff');
+}
+
+@font-face {
+    font-family: $font-name + '-MediumItalic';
+    src: url($font-location + '/2FC767_3_0.woff');
+}
+
+@font-face {
+    font-family: $font-name + '-LightItalic';
+    src: url($font-location + '/2FC767_6_0.woff');
+}
+
+@font-face {
+    font-family: $font-name + '-BoldItalic';
+    src: url($font-location + '/2FC767_8_0.woff');
+}
+
+.font {
+    &-thin {
+        font-family: $font-name + '-Thin';
+    }
+
+    &-light {
+        font-family: $font-name + '-Light';
+    }
+
+    &-regular {
+        font-family: $font-name + '-Regular';
+    }
+
+    &-bold {
+        font-family: $font-name + '-Bold';
+    }
+
+    &-italic {
+        font-family: $font-name + '-RegularItalic';
+
+        &-light {
+            font-family: $font-name + '-LightItalic';
+        }
+        &-thin {
+            font-family: $font-name + '-ThinItalic';
+        }
+        &-medium {
+            font-family: $font-name + '-MediumItalic';
+        }
+        &-bold {
+            font-family: $font-name + '-BoldItalic';
+        }
+    }
+}

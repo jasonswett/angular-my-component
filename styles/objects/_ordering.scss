@@ -1,0 +1,58 @@
+.ma-ordering-component {
+
+	.column {
+		border: 1px solid #000000;
+		border-radius: 5px;
+	}
+
+	.ordering-content-container {
+		overflow: hidden;
+
+		.ordering-content {
+			position:absolute;
+			left: 180%;
+			width: 100%;
+		}
+
+		.ordering-item {
+			list-style: none;
+			@extend .btn;
+			@extend .btn-danger;
+			width: 100%;
+			height: 50px;
+			line-height: 35px;
+
+			.handle {
+				text-align: left;
+				float: left;
+				padding-right: 10px;
+			}
+		}
+
+	}
+
+	.ordering-button-container {
+		text-align: center;
+		margin-top: 10px;
+
+		button {
+			@extend .btn;
+			@extend .btn-primary;
+		}
+	}
+
+	.theme {
+		&-white {
+			h2, p {
+				color: $grey100;
+			}
+
+			.ordering-button-container {
+				button {
+					background-color: $grey100;
+				}
+			}
+		}
+	}
+}
+

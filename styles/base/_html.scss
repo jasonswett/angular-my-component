@@ -1,0 +1,14 @@
+html, body {
+    margin: 0;
+    font-family: 'Arimo';
+    font-size: 16px;
+    padding: 0;
+
+    @include mobile {
+        background-color: $grey200;
+    }
+}
+
+.clear {
+    clear: both;
+}

@@ -1,0 +1,26 @@
+.strike-through {
+    line-height: 0.5;
+    text-align: center;
+
+    span {
+        display: inline-block;
+        position: relative;
+
+        &:before, &:after {
+            content: "";
+            position: absolute;
+            height: 4px;
+            border-bottom: 1px solid darken($grey200, 5%);
+            top: 0;
+            width: $strike-through-width;
+        }
+        &:before {
+            right: 100%;
+            margin-right: 15px;
+        }
+        &:after {
+            left: 100%;
+            margin-left: 15px;
+        }
+    }
+}

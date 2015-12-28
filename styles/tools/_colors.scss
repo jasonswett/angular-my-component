@@ -1,0 +1,79 @@
+$navy900   : #252F40;
+$navy500   : #3E536B;
+$navy400   : #4D6982;
+
+$yellow500 : #FFD24F;
+
+$grey500   : #7B7F84;
+$grey200   : #EDEEEF;
+$grey100   : #FFFFFF;
+
+$red500    : #DF5356;
+$green500  : #6EBE4A;
+$blue500   : #0B93CE;
+$organge500: #FAA819;
+$pink500   : #E36CA9;
+$purple500 : #8A60A9;
+$teal500   : #2279A0;
+$brown500  : #5E4A44;
+
+/* Overwrite Bootstrap Variable */
+$text-color: $grey500;
+
+
+.bg {
+    &-navy {
+        background-color: $navy500 !important;
+
+        &-opaque {
+            @include background-opacity($navy500, $opacity);
+        }
+
+        &-drk {
+            background-color: $navy900 !important;
+
+            &-opaque {
+                @include background-opacity($navy900, $opacity);
+            }
+        }
+    }
+    &-red {
+       background-color: $red500 !important;
+
+        &-opaque {
+            @include background-opacity($red500, $opacity);
+        }
+    }
+    &-green {
+       background-color: $green500 !important;
+
+        &-opaque {
+            @include background-opacity($green500, $opacity);
+        }
+    }
+
+    &-purple {
+       background-color: $purple500 !important;
+
+        &-opaque {
+            @include background-opacity($purple500, $opacity);
+        }
+    }
+}
+
+
+
+.text {
+    &-white {
+        color: $grey100 !important;
+    }
+    &-offwhite {
+        color: $grey200 !important;
+    }
+    &-navy {
+        color: $navy500 !important;
+    }
+    &-green {
+        color: $green500 !important;
+    }
+}

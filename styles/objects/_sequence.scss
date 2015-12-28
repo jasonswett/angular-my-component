@@ -1,0 +1,92 @@
+.ma-sequence-component {
+
+    .sequence-content-container {
+        position: relative;
+        overflow: hidden;
+
+        .sequence-content {
+            position:absolute;
+            //left: 180%;
+            width: 100%;
+        }
+
+        .active {
+            left: 0;
+            position: relative;
+        }
+    }
+
+    .sequence-button-container {
+        text-align: center;
+
+        button {
+            background-color: $navy500;
+            color: $grey100;
+            width: 100px;
+            margin: 0 10px;
+
+            &:disabled {
+                opacity: .2;
+            }
+        }
+    }
+
+    .sequence-indicator-divider {
+        border-top: 1px solid $grey200;
+        height: 1px;
+    }
+
+    .sequence-indicator-container {
+        text-align: center;
+
+        .sequence-indicator {
+            display: inline-block;
+            border-radius: 50%;
+            width: 10px;
+            height: 10px;
+            border: 1px solid $navy500;
+            color: #FFF;
+            margin: 0 8px;
+
+            &.active {
+                background-color: $navy500;
+            }
+        }
+    }
+
+    .theme {
+        &-white {
+            h2, p {
+                color: $grey100;
+            }
+
+            .sequence-indicator-divider {
+                border-top: 1px solid $grey200;
+            }
+
+            .sequence-button-container {
+                button {
+                    background-color: $grey100;
+                }
+            }
+
+            .sequence-indicator-container {
+                .sequence-indicator {
+                    border: 1px solid $grey100;
+
+                    &.active {
+                        background-color: $grey100;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.ma-sequence-component2 {
+    @extend .ma-sequence-component;
+
+    .slide-toggle {
+        overflow: hidden;
+    }
+}

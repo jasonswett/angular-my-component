@@ -1,0 +1,38 @@
+$checkbox-row-height: 24px !default;
+
+.multiple-response {
+    ul {
+        padding: 0;
+        margin: 0;
+
+        li {
+            list-style: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+    }
+
+    label {
+        display: block;
+        height: $checkbox-row-height;
+        line-height: $checkbox-row-height;
+        font-weight: normal;
+    }
+
+    input[type='checkbox'] {
+        display: none;
+    }
+
+    .checkbox {
+        margin: 0 10px 0 0;
+        width: $checkbox-row-height;
+        height: $checkbox-row-height;
+        border: 1px solid #000;
+        float: left;
+    }
+
+    .checked {
+        background: url('/images/checkmark.svg') no-repeat 50% 50%;
+        background-size: 50%;
+    }
+}

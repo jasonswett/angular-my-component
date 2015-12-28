@@ -1,0 +1,35 @@
+.ma-download-component {
+
+	.container {
+		overflow: hidden;
+
+		.content {
+			width: 100%;
+		}
+	}
+
+	.download-container {
+		overflow: hidden;
+
+		.link {
+			float: right;
+			@extend .btn;
+			@extend .btn-default;
+		}
+	}
+
+	.theme {
+		&-white {
+			h2, p {
+				color: $grey100;
+			}
+
+			.ordering-button-container {
+				button {
+					background-color: $grey100;
+				}
+			}
+		}
+	}
+}
+

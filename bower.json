@@ -4,7 +4,7 @@
     "Jason Swett <jason@meetmaestro.com>"
   ],
   "description": "",
-  "main": "./directive.js",
+  "main": "./ma-text-component.js",
   "moduleType": [],
   "license": "MIT",
   "homepage": "",
